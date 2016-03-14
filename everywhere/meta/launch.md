@@ -16,7 +16,7 @@ Therefore I've decided to document my ideas, concepts, insights and experiments 
 Because on the one hand I know of some people among my friends alone who are toying with similar thoughts and might be happy about detailed information.
 On the other hand it enables me to get feedback from everywhere in the world that is going to help me with this step.
 
-So, what can you expect on this site in the future?
+So, what (in addition to better design) can you expect on this site in the future?
 
 <!-- TEASER_END -->
 
