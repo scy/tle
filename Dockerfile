@@ -10,4 +10,6 @@ USER nikola
 
 COPY conf.py conf.py
 
+COPY files files
+
 COPY everywhere everywhere
