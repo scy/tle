@@ -1,0 +1,4 @@
+Sitemap: https://timliv.es/sitemapindex.xml
+
+User-Agent: *
+Host: timliv.es
