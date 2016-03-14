@@ -8,8 +8,7 @@ RUN sed -i '/^# de_DE.UTF-8 UTF-8$/s/^# //' /etc/locale.gen \
 
 USER nikola
 
-COPY conf.py conf.py
-
-COPY files files
-
+COPY conf.py    conf.py
+COPY files      files
+COPY pages      pages
 COPY everywhere everywhere

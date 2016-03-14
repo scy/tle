@@ -131,6 +131,7 @@ NAVIGATION_LINKS = {
         # ("/archive.html", "Archive"),
         ("/in/", "Places"),
         ("/everywhere/tags/", "Tags"),
+        ("/everywhere/contact/", "Contact me"),
         ("/everywhere/rss.xml", "RSS feed"),
     ),
 
@@ -138,6 +139,7 @@ NAVIGATION_LINKS = {
         # ("/de/archive.html", "Archiv"),
         ("/in-german/in/", "Orte"),
         ("/in-german/everywhere/tags/", "Tags"),
+        ("/in-german/everywhere/contact/", "Kontakt"),
         ("/in-german/everywhere/rss.xml", "RSS-Feed"),
     ),
 }
@@ -181,10 +183,10 @@ POSTS = (
     ("everywhere/*.html", "everywhere", "post.tmpl"),
 )
 PAGES = (
-    ("stories/*.md",   "stories", "story.tmpl"),
-    ("stories/*.rst",  "stories", "story.tmpl"),
-    ("stories/*.txt",  "stories", "story.tmpl"),
-    ("stories/*.html", "stories", "story.tmpl"),
+    ("pages/*.md",   "", "story.tmpl"),
+    ("pages/*.rst",  "", "story.tmpl"),
+    ("pages/*.txt",  "", "story.tmpl"),
+    ("pages/*.html", "", "story.tmpl"),
 )
 
 
@@ -808,7 +810,10 @@ LICENSE = """
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
-CONTENT_FOOTER = 'Contents &copy; {date}         <a href="mailto:{email}">{author}</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         {license}'
+CONTENT_FOOTER = {
+    DEFAULT_LANG: 'Contents &copy; {date} <a href="/everywhere/contact/">{author}</a> - Powered by <a href="https://getnikola.com" rel="nofollow">Nikola</a><br /><a href="/everywhere/privacy-and-disclaimer/">Privacy and Disclaimer</a><br />{license}',
+    "de":         'Inhalte &copy; {date} <a href="/in-german/everywhere/contact/">{author}</a> - Powered by <a href="https://getnikola.com" rel="nofollow">Nikola</a><br /><a href="/in-german/everywhere/privacy-and-disclaimer/">Datenschutz und Haftungsausschluss</a><br />{license}',
+}
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
