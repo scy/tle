@@ -8,7 +8,7 @@
 If you're among the people I know personally, chances are I've already told you about my plan to move into some kind of mobile home.
 I've not quite decided whether that's going to be a trailer, motorhome or even a container, but _that_ I'm gonna do it is pretty much certain.
 
-However, there's still a huge amount of open questions: organizational, financial, legal ones--and in addition to these there are mundane ones like "am I _able_ to to that" and "is it going to make me _happy_".
+However, there's still a huge amount of open questions: organizational, financial, legal ones--and in addition to these there are mundane ones like "am I _able_ to do that" and "is it going to make me _happy_".
 Generally, I'm the kind of guy who figures out these things by himself and then simply _does_ them--but in this case, the decision is going to influence my live for a number of years.
 And, above that, most likely cost a pretty penny as well.
 
@@ -16,7 +16,7 @@ Therefore I've decided to document my ideas, concepts, insights and experiments 
 Because on the one hand I know of some people among my friends alone who are toying with similar thoughts and might be happy about detailed information.
 On the other hand it enables me to get feedback from everywhere in the world that is going to help me with this step.
 
-So, what can you expect on this site in the future?
+So, what (in addition to better design) can you expect on this site in the future?
 
 <!-- TEASER_END -->
 

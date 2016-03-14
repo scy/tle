@@ -14,7 +14,7 @@ Deshalb habe ich mich entschieden, meine Ideen, Konzepte, Erkenntnisse und Exper
 Denn einerseits kenne ich allein schon in meinem Freundeskreis einige, die mit ähnlichen Gedanken spielen und sich über ausführliche Informationen freuen dürften.
 Andererseits bietet es mir natürlich auch die Möglichkeit, Feedback aus allen Ecken der Welt zu bekommen, das mir bei diesem Schritt helfen wird.
 
-Was könnt ihr also in absehbarer Zeit auf dieser Seite erwarten?
+Was könnt ihr also (außer besserem Design) in absehbarer Zeit auf dieser Seite erwarten?
 
 <!-- TEASER_END -->
 
