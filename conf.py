@@ -535,7 +535,8 @@ RSS_PATH = "everywhere"
 #
 # If you don't need any of these, just set to []
 REDIRECTIONS = [
-    ("index.html", "/everywhere/")
+    ("index.html", "/everywhere/"),
+    ("in-german/index.html", "/in-german/everywhere/"),
 ]
 
 # Presets of commands to execute to deploy. Can be anything, for
