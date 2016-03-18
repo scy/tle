@@ -6,6 +6,11 @@ USER root
 RUN sed -i '/^# de_DE.UTF-8 UTF-8$/s/^# //' /etc/locale.gen \
 	&& dpkg-reconfigure -f noninteractive locales
 
+RUN apt-get update \
+	&& apt-get install --no-install-recommends -y git-core \
+	&& apt-get clean \
+	&& rm -rf /var/lib/apt/lists/*
+
 COPY tle.sh     tle.sh
 COPY conf.py    conf.py
 COPY files      files

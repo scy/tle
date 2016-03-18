@@ -1,3 +1,4 @@
 /.doit.db.db
+/.gitignore
 /__pycache__/
 /cache/
