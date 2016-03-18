@@ -30,6 +30,10 @@ case "$cmd" in
 		git log --stat -n 1
 		git push origin gh-pages
 		;;
+	serve)
+		nikola build
+		nikola serve
+		;;
 	sh|shell|bash)
 		bash
 		;;
