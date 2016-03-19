@@ -7,54 +7,78 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://timliv.es/everywhere/rss.xml</loc>
-  <lastmod>2016-03-18T22:32:00Z</lastmod>
+  <lastmod>2016-03-19T12:01:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://timliv.es/everywhere/tags/club-joker.xml</loc>
+  <lastmod>2016-03-19T12:01:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://timliv.es/everywhere/tags/fulltimer.xml</loc>
-  <lastmod>2016-03-18T22:32:00Z</lastmod>
+  <lastmod>2016-03-19T12:01:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://timliv.es/everywhere/tags/link.xml</loc>
-  <lastmod>2016-03-18T22:32:00Z</lastmod>
+  <lastmod>2016-03-19T12:01:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://timliv.es/everywhere/tags/meta.xml</loc>
-  <lastmod>2016-03-18T22:32:00Z</lastmod>
+  <lastmod>2016-03-19T12:01:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://timliv.es/everywhere/tags/thoughts.xml</loc>
+  <lastmod>2016-03-19T12:01:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://timliv.es/everywhere/tags/vehicle.xml</loc>
+  <lastmod>2016-03-19T12:01:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://timliv.es/everywhere/tags/website.xml</loc>
-  <lastmod>2016-03-18T22:32:00Z</lastmod>
+  <lastmod>2016-03-19T12:01:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://timliv.es/in-german/everywhere/rss.xml</loc>
-  <lastmod>2016-03-18T22:32:00Z</lastmod>
+  <lastmod>2016-03-19T12:01:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://timliv.es/in-german/everywhere/tags/club-joker.xml</loc>
+  <lastmod>2016-03-19T12:01:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://timliv.es/in-german/everywhere/tags/fulltimer.xml</loc>
-  <lastmod>2016-03-18T22:32:00Z</lastmod>
+  <lastmod>2016-03-19T12:01:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://timliv.es/in-german/everywhere/tags/link.xml</loc>
-  <lastmod>2016-03-18T22:32:00Z</lastmod>
+  <lastmod>2016-03-19T12:01:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://timliv.es/in-german/everywhere/tags/meta.xml</loc>
-  <lastmod>2016-03-18T22:32:00Z</lastmod>
+  <lastmod>2016-03-19T12:01:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://timliv.es/in-german/everywhere/tags/thoughts.xml</loc>
+  <lastmod>2016-03-19T12:01:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://timliv.es/in-german/everywhere/tags/vehicle.xml</loc>
+  <lastmod>2016-03-19T12:01:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://timliv.es/in-german/everywhere/tags/website.xml</loc>
-  <lastmod>2016-03-18T22:32:00Z</lastmod>
+  <lastmod>2016-03-19T12:01:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://timliv.es/in-german/in/frankfurt.xml</loc>
-  <lastmod>2016-03-18T22:32:00Z</lastmod>
+  <lastmod>2016-03-19T12:01:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://timliv.es/in/frankfurt.xml</loc>
-  <lastmod>2016-03-18T22:32:00Z</lastmod>
+  <lastmod>2016-03-19T12:01:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://timliv.es/sitemap.xml</loc>
-  <lastmod>2016-03-18T22:32:00Z</lastmod>
+  <lastmod>2016-03-19T12:01:00Z</lastmod>
  </sitemap>
 </sitemapindex>
