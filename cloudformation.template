@@ -1,0 +1,96 @@
+{
+	"AWSTemplateFormatVersion": "2010-09-09",
+	"Description": "Infrastructure for timliv.es.",
+
+
+
+	"Resources": {
+
+		"CloudFront": {
+			"Type": "AWS::CloudFront::Distribution",
+			"Properties": {
+				"DistributionConfig": {
+					"Aliases": ["timliv.es"],
+					"Origins": [{
+						"Id": "GitHub",
+						"DomainName": "scy.github.io",
+						"OriginPath": "/tle",
+						"CustomOriginConfig": {
+							"OriginProtocolPolicy": "http-only"
+						}
+					}],
+					"PriceClass": "PriceClass_100",
+					"Enabled": true,
+					"DefaultCacheBehavior": {
+						"TargetOriginId": "GitHub",
+						"ViewerProtocolPolicy": "redirect-to-https",
+						"Compress": true,
+						"DefaultTTL": 600,
+						"ForwardedValues": {
+							"QueryString": false
+						}
+					},
+					"ViewerCertificate": {
+						"AcmCertificateArn": "arn:aws:acm:us-east-1:859949227357:certificate/3276554f-8bb9-4997-b20f-4886d5e9015a",
+						"SslSupportMethod": "sni-only"
+					}
+				}
+			}
+		},
+
+		"RedirectBucket": {
+			"Type": "AWS::S3::Bucket",
+			"Properties": {
+				"BucketName": "www.timliv.es",
+				"AccessControl": "BucketOwnerFullControl",
+				"WebsiteConfiguration": {"RedirectAllRequestsTo": {"HostName": "timliv.es"}},
+				"Tags": [
+					{"Key": "Project", "Value": "timlives"}
+				]
+			}
+		},
+
+		"Zone": {
+			"Type": "AWS::Route53::HostedZone",
+			"Properties": {
+				"Name": "timliv.es.",
+				"HostedZoneTags": [
+					{"Key": "Project", "Value": "timlives"}
+				]
+			}
+		},
+
+		"Records": {
+			"Type": "AWS::Route53::RecordSetGroup",
+			"Properties": {
+				"HostedZoneId": {"Ref": "Zone"},
+				"RecordSets": [{
+					"Name": "timliv.es.",
+					"Type": "A",
+					"AliasTarget": {
+						"HostedZoneId": "Z2FDTNDATAQYW2",
+						"DNSName": {"Fn::GetAtt": ["CloudFront", "DomainName"]}
+					}
+				}, {
+					"Name": "www.timliv.es.",
+					"Type": "A",
+					"AliasTarget": {
+						"HostedZoneId": "Z1BKCTXD74EZPE",
+						"DNSName": {"Fn::Join": ["", ["s3-website-", {"Ref": "AWS::Region"}, ".amazonaws.com"]]}
+					}
+				}, {
+					"Name": "timliv.es.",
+					"Type": "MX",
+					"TTL": 600,
+					"ResourceRecords": ["10 mxa.mailgun.org.", "10 mxb.mailgun.org."]
+				}, {
+					"Name": "_amazonses.timliv.es.",
+					"Type": "TXT",
+					"TTL": 3600,
+					"ResourceRecords": ["\"suMso2B4/cR4VSj3zsGhyHM/HCF3CPO1HR2+AkBz9L8=\""]
+				}]
+			}
+		}
+
+	}
+}
