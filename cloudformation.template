@@ -50,6 +50,17 @@
 			}
 		},
 
+		"ContentBucket": {
+			"Type": "AWS::S3::Bucket",
+			"Properties": {
+				"BucketName": "timliv.es",
+				"AccessControl": "BucketOwnerFullControl",
+				"Tags": [
+					{"Key": "Project", "Value": "timlives"}
+				]
+			}
+		},
+
 		"Zone": {
 			"Type": "AWS::Route53::HostedZone",
 			"Properties": {
